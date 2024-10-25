@@ -15,6 +15,9 @@
     align-items: center;
     line-height: 20px;
 }
+.company-details p{
+    font-size: 19px;
+}
 .text-bold{
     font-weight: bold;
 }
@@ -24,6 +27,8 @@
 .invoice-text {
     color: #273c75;
     margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 19px;
 }
 .invoice-details{
     display: flex;
@@ -32,6 +37,7 @@
 }
 .customer-details{
     line-height: 22px;
+    font-size: 19px;
 }
 hr{
     border: 1px solid #273c75;
@@ -88,41 +94,33 @@ hr{
 
 .table-row {
 	display:flex;
-	width:100%;
-	padding:($half-spacing-unit * 1.5) 0;
-	
-	&:nth-of-type(odd) {
-		background:$color-form-highlight;
-	}
+    padding: 12px 0;
 }
-
-.table-data, .header__item {
-	flex: 1 1 20%;
+.table-row:hover{
+    background-color: #dee0e6;
+}
+.table-data, .header-item {
+	flex: 10%;
 	text-align:center;
+    font-size: 18px;
 }
 
-.header__item {
+.header-item {
 	color:white;
-	text-decoration: none;
-	position:relative;
-	display:inline-block;
-	
-	&::after {
-		content:'';
-		position:absolute;
-		right:-($half-spacing-unit * 1.5);
-		color:white;
-		font-size:$half-spacing-unit;
-		top: 50%;
-		transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 18px;
 	}
 	
-	&.desc::after {
-		content: '(desc)';
-	}
-
-	&.asc::after {
-		content: '(asc)';
-	}
-	
-}
+    .header-item-start {
+        flex: 1 1 20%;
+        text-align:start;
+        font-size: 18px;
+        color:white;
+    font-weight: bold;
+    font-size: 18px;
+    }
+    .table-data-start {
+        flex: 1 1 20%;
+        text-align:start;
+        font-size: 18px;
+    }
