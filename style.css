@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+}
+.invoice {
+    border: 2px solid #273c75;
+    margin:  50px 150px;
+}
+.company-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 20px;
+}
+.text-bold{
+    font-weight: bold;
+}
+.logo{
+    width: 200px;
+}
+.invoice-text {
+    color: #273c75;
+    margin-bottom: 5px;
+}
+.invoice-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 18px;
+}
+.customer-details{
+    line-height: 22px;
+}
+hr{
+    border: 1px solid #273c75;
+}
+.invoice-serial{
+    display: flex;
+    justify-content: space-between;
+    background-color: #273c75;
+    color: #ffffff;
+}
+.invoice-no1{
+   text-align: start;
+   padding: 10px ;
+   font-weight: bold;
+}
+.invoice-no2 {
+   text-align: end;
+   padding: 10px ;
+   font-weight: bold;
+}
+.invoice-info{
+    display: flex;
+    justify-content: space-between;
+}
+.text-start{
+    text-align: start;
+    padding: 10px ;
+    font-weight: bold;
+}
+.text-end{
+    text-align: end;
+    padding: 10px ;
+}
+.customer-info{
+    border: 2px solid #273c75;
+    width: 500px;
+}
+.logo {
+    color: #3c40c6;
+    font-size: 25px;
+}
+
+.table{
+    padding: 20px 0;
+}
+
+
+.table-header {
+	display:flex;
+	width:100%;
+	background:#273c75;
+    padding: 10px 0;
+}
+
+.table-row {
+	display:flex;
+	width:100%;
+	padding:($half-spacing-unit * 1.5) 0;
+	
+	&:nth-of-type(odd) {
+		background:$color-form-highlight;
+	}
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+}
+
+.header__item {
+	color:white;
+	text-decoration: none;
+	position:relative;
+	display:inline-block;
+	
+	&::after {
+		content:'';
+		position:absolute;
+		right:-($half-spacing-unit * 1.5);
+		color:white;
+		font-size:$half-spacing-unit;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	&.desc::after {
+		content: '(desc)';
+	}
+
+	&.asc::after {
+		content: '(asc)';
+	}
+	
+}
