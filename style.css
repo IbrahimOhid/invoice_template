@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     line-height: 30px;
+    margin-bottom: 20px;
 }
 .company-details p{
     font-size: 19px;
@@ -142,14 +143,52 @@ hr{
     background-color: #dee0e6;
 }
 .sub-total{
+    display: inline;
     width: 500px;
-    float: right;
+    margin-bottom: 10px;
     line-height: 20px;
     font-weight: bold;
+    float: inline-end;
+}
+.sub-total hr{
+    border: 1px solid #273c75;
+    margin: 0 10px 0 10px;
 }
 .sub-info{
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
+    padding: 0;
 }
-
+.payment{
+    margin-bottom: 100px;
+}
+.payment-body{
+    display:inline-table;
+    margin-top: 20px;
+    width: 100%;
+}
+.payment-body h1{
+    margin-bottom: 20px;
+}
+.payment hr{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #273c75;
+}
+#bank{
+    background-color: #dee0e6;
+}
+.terms{
+    padding: 20px;
+}
+.terms ol li{
+    list-style-type: disc;
+    font-size: 23px;
+    line-height: 40px;
+}
+.copy-right{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 22px;
+}
