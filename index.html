@@ -11,9 +11,205 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
     <title>Invoice</title>
     <!--internal css-->
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+}
+.invoice-section {
+    margin:  50px 150px;
+}
+.company-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.company-details p{
+    font-size: 19px;
+}
+.text-bold{
+    font-weight: bold;
+}
+.logo{
+    width: 200px;
+}
+.invoice-text {
+    color: #273c75;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 19px;
+}
+.invoice-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 18px;
+}
+.customer-details{
+    line-height: 35px;
+}
+.customer-details p{
+    font-size: 20px;
+}
+.invoice-body{
+    background-color: #e7e5e5;
+}
+hr{
+    border: 1px solid #273c75;
+}
+.invoice-serial{
+    display: flex;
+    justify-content: space-between;
+    background-color: #273c75;
+    color: #ffffff;
+}
+.invoice-no1{
+   text-align: start;
+   padding: 10px ;
+   font-weight: bold;
+}
+.invoice-no2 {
+   text-align: end;
+   padding: 10px ;
+   font-weight: bold;
+}
+.invoice-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+.text-start{
+    text-align: start;
+    padding: 10px ;
+    font-weight: bold;
+    font-size: 20px;
+}
+.text-end{
+    text-align: end;
+    padding: 10px ;
+    font-size: 20px;
+}
+.customer-info{
+    border: 2px solid #273c75;
+    width: 500px;
+}
+
+.logo {
+    color: #3c40c6;
+    font-size: 25px;
+}
+
+.table{
+    padding: 20px 0;
+    
+}
+.table-body{
+    border: 1px solid #dee0e6;
+}
+
+
+.table-header {
+	display:flex;
+	width:100%;
+	background:#273c75;
+    padding: 10px 0;
+}
+
+.table-row {
+	display:flex;
+    padding: 15px 0;
+    border: 1px solid #dee0e6;
+}
+.table-row:hover{
+    background-color: #dee0e6;
+}
+.table-data, .header-item {
+	flex: 10%;
+	text-align:center;
+    font-size: 18px;
+    
+}
+
+.header-item {
+	color:white;
+    font-weight: bold;
+    font-size: 18px;
+	}
+	
+.header-item-start {
+    flex: 1 1 20%;
+    text-align:start;
+    font-size: 18px;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    }
+.table-data-start {
+    flex: 1 1 20%;
+    text-align:start;
+    font-size: 18px;
+    }
+#espresso{
+    background-color: #dee0e6;
+}
+.sub-total{
+    display: inline;
+    width: 500px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-weight: bold;
+    float: inline-end;
+}
+.sub-total hr{
+    border: 1px solid #273c75;
+    margin: 0 10px 0 10px;
+}
+.sub-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.payment{
+    margin-bottom: 100px;
+}
+.payment-body{
+    display:inline-table;
+    margin-top: 20px;
+    width: 100%;
+}
+.payment-body h1{
+    margin-bottom: 20px;
+}
+.payment hr{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #273c75;
+}
+#bank{
+    background-color: #dee0e6;
+}
+.terms{
+    padding: 20px;
+}
+.terms ol li{
+    list-style-type: disc;
+    font-size: 23px;
+    line-height: 40px;
+}
+.copy-right{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+    </style>
   </head>
 
   <body>
